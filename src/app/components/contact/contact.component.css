@@ -1,0 +1,28 @@
+main {
+    background-color: black;
+}
+
+.contact-page{
+    color: #f8f5f5;
+}
+
+.line{
+    width: 6.25rem;
+    height: .25rem;
+    background-color: #2C3E50;
+}
+
+.form-control{
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color:unset ;
+}
+
+.btn{
+    background-color: #320968;
+}

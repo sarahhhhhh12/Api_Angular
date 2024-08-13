@@ -1,0 +1,30 @@
+
+
+
+
+<main>
+
+    <div class="container">
+        <div class="row pt-5 g-3">
+            @for (product of products; track $index) {
+                <div class="col-md-4">
+                    <div class="card overflow-hidden" style="width: 100%;">
+                        <img [src]="product.imageCover" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">Title: {{product.title}}</h4>
+                          <p class="card-text"><strong>Description</strong> : {{product.description.split(" ", 10 ).join(" ")}}</p>
+                          <p> <strong>Price</strong> {{product.price}} EG</p>
+                          <p><strong>Price After Discount</strong> : {{product.priceAfterDiscount}} EG  </p>
+                          <p> <strong>Rate</strong> : {{product.ratingsAverage}}</p>
+                        </div>
+                      </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+</main>
+
+
+
